@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous" defer></script>
+    <!-- Meu CSS  -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container col-11 col-md-9" id="form-container">
+        <div class="row align-items-center gx-5">
+            <div class="col-md-6">
+                <h2>Realize o seu cadastro</h2>
+                <form>
+                    <div class="form-floating mb-3">
+                        <input type="text" name="name" id="name" class="form-control" placeholder="Digite o seu nome">
+                        <label for="name" class="form-label">Digite o seu nome</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" name="lastname" id="lastname" class="form-control" placeholder="Digite o seu sobrenome">
+                        <label for="lastname" class="form-label">Digite o seu sobrenome</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" name="email" id="email" class="form-control" placeholder="Digite o seu email">
+                        <label for="email" class="form-label">Digite o seu email</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" name="password" id="password" class="form-control" placeholder="Digite a sua senha">
+                        <label for="password" class="form-label">Digite a sua senha</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" name="password" id="confirm" class="form-control" placeholder="confirme a sua senha">
+                        <label for="confirm" class="form-label">confirme a sua senha</label>
+                    </div>
+                    <div class="mb-3">
+                        <div class="form-check mb-2">
+                            <input type="checkbox" name="agree-form" id="agree-form" class="form-check-input">
+                            <label for="agree-form" class="form-check-label">
+                                Você aceita os <a href="#">termos de serviço?</a>
+                            </label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input type="checkbox" name="newsletter" id="newsletter" class="form-check-input" checked>
+                            <label for="newsletter" class="form-check-label">
+                                Deseja receber as nossas newsletter?</a>
+                            </label>
+                        </div>
+                        <input type="submit" class="btn btn-primary" value="Cadastrar">
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <div class="row align-items-center">
+                    <div>
+                        <img src="img/hello.svg" alt="boneco de login" class="img-fluid">
+                    </div>
+                    <div id="link-container">
+                        <a href="login.html">Eu já tenho uma conta</a>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

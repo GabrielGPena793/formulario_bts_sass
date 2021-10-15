@@ -1,0 +1,81 @@
+body
+    background-color: #f8f8f8
+
+
+// media
+@mixin mobile768
+    @media (min-width:768px)
+        @content
+
+/* Form 
+
+#form-container
+    background-color: #fff
+    border-radius: 20px
+    box-shadow: 0.5px 10px 15px rgba(0,0,0,0.2)
+    margin: 5px auto
+    padding: 25px
+
+    @include mobile768
+        padding-top: 0
+
+    input[type='submit'], input[type='checkbox']:checked
+        background-color: #6c63ff
+        border-color: #6c63ff
+
+    h2
+        font-weight: 900
+        margin-bottom: 30px
+
+    form
+        padding: 0
+
+        .form-floating
+            >.form-control
+                &:focus
+                    ~label
+                        color: #222
+
+
+            label
+                color: #ccc
+
+            .form-control
+                border: none
+                border-bottom: 1px solid #ccc
+                border-radius: 0
+
+                &:focus
+                    box-shadow: none
+
+        .btn.btn-primary
+            width: 100%
+            margin-top: 25px
+
+            @include mobile768
+                width: auto 
+
+    .col-md-6.order-md-1
+        padding-top: 50px
+        
+        @include mobile768
+            margin:50px auto
+            padding: 50px
+
+    a
+        color: #222
+        transition: 0.5s
+
+        &:hover
+            color: #6c63ff
+    
+    #link-container
+        text-align: center
+        padding-top: 50px
+
+/* IMG
+
+.row.align-items-center
+    align-content: center
+    height: 100%
+    padding: 75px 0
